@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button android:id="@+id/previousButton" 
+				android:text="Previous"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		<Button android:id="@+id/nextButton" 
+				android:text="Next"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<ViewFlipper android:id="@+id/viewFlipper"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+		<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="View 1"/>
+		<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="View 2"/>
+		<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="View 3"/>
+	</ViewFlipper>
+</LinearLayout>
